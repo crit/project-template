@@ -1,0 +1,17 @@
+{
+    "name": "My/Project",
+    "description": "My Project Template",
+    "require": {
+        "phpunit/phpunit": "3.*"
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Crit Russell",
+            "email": "crit.gfg@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-0" : {"Base" : "src/", "MyApp" : "src/"}
+    }
+}
