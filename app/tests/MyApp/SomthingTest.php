@@ -6,7 +6,7 @@ class SomethingTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         $this->app = new \MyApp\Something();
-        $this->app->setup( new \Base\Model\Response, array() );
+        $this->app->setup( new \Base\Model\Response );
     }
 
     /**
@@ -20,6 +20,9 @@ class SomethingTest extends \PHPUnit_Framework_TestCase
 
         $this->app->execute();
 
-        $this->assertTrue($this->app->response->data === $message, print_r($this->app->response, true));
+        $this->assertTrue(
+            $this->app->response->data === $message, 
+            print_r($this->app->response, true) . "\nDATA DID NOT MATCH"
+        );
     }
 }

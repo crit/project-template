@@ -7,7 +7,7 @@ class Application implements iApplication
         $settings,
         $response;
 
-    public function setup(\Base\Model\Response $response, $settings)
+    public function setup(\Base\Model\Response $response, $settings = array())
     {
         $this->response = $response;
         $this->settings = $settings;
