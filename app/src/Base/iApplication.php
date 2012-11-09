@@ -1,5 +1,5 @@
 <?php
-namespace Kyani;
+namespace Base;
 
 interface iApplication
 {

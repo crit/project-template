@@ -60,7 +60,7 @@ class Parser
 
     public function buildApp()
     {
-        $class = implode('\\', array('Kyani', ucfirst($this->context), ucfirst($this->app_name)));
+        $class = implode('\\', array(ucfirst($this->context), ucfirst($this->app_name)));
         
         if (!class_exists($class)) {
             throw new Exception("Unable to find URI /{$this->context}/{$this->app_name}.");

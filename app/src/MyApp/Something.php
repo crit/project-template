@@ -8,7 +8,7 @@ class Something extends \Base\Application
         $value = $_GET['v'];
 
         $this->response->success = true;
-        $this->response->data = "You passed: $value";
+        $this->response->data = $value;
 
         parent::execute();
     }
